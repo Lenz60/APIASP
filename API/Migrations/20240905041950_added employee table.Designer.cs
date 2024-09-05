@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20240903071918_Added table role")]
-    partial class Addedtablerole
+    [Migration("20240905041950_added employee table")]
+    partial class addedemployeetable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -30,16 +30,41 @@ namespace API.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Dept_Initial")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Dept_Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Dept_Id");
 
-                    b.ToTable("TB_M_Department");
+                    b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("API.Models.Employee", b =>
+                {
+                    b.Property<string>("Employee_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("DepartmentsDept_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Dept_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Employee_Id");
+
+                    b.HasIndex("DepartmentsDept_Id");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("API.Models.Roles", b =>
@@ -54,6 +79,15 @@ namespace API.Migrations
                     b.HasKey("Role_Id");
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("API.Models.Employee", b =>
+                {
+                    b.HasOne("API.Models.Department", "Departments")
+                        .WithMany()
+                        .HasForeignKey("DepartmentsDept_Id");
+
+                    b.Navigation("Departments");
                 });
 #pragma warning restore 612, 618
         }

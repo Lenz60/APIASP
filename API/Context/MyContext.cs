@@ -11,7 +11,8 @@ namespace API.Context
         {}
         public DbSet<Department> Departments {get; set;}
         public DbSet<Roles> Roles { get; set; }
-        
+        public DbSet<Employee> Employees { get; set; }
+
     }
 }
 

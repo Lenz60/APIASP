@@ -34,7 +34,34 @@ namespace API.Migrations
 
                     b.HasKey("Dept_Id");
 
-                    b.ToTable("TB_M_Department");
+                    b.ToTable("Departments");
+                });
+
+            modelBuilder.Entity("API.Models.Employee", b =>
+                {
+                    b.Property<string>("Employee_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("DepartmentsDept_Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Dept_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Employee_Id");
+
+                    b.HasIndex("DepartmentsDept_Id");
+
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("API.Models.Roles", b =>
@@ -49,6 +76,15 @@ namespace API.Migrations
                     b.HasKey("Role_Id");
 
                     b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("API.Models.Employee", b =>
+                {
+                    b.HasOne("API.Models.Department", "Departments")
+                        .WithMany()
+                        .HasForeignKey("DepartmentsDept_Id");
+
+                    b.Navigation("Departments");
                 });
 #pragma warning restore 612, 618
         }
