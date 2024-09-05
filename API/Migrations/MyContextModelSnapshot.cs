@@ -42,12 +42,9 @@ namespace API.Migrations
                     b.Property<string>("Employee_Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("DepartmentsDept_Id")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Dept_Id")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -59,7 +56,7 @@ namespace API.Migrations
 
                     b.HasKey("Employee_Id");
 
-                    b.HasIndex("DepartmentsDept_Id");
+                    b.HasIndex("Dept_Id");
 
                     b.ToTable("Employees");
                 });
@@ -82,7 +79,9 @@ namespace API.Migrations
                 {
                     b.HasOne("API.Models.Department", "Departments")
                         .WithMany()
-                        .HasForeignKey("DepartmentsDept_Id");
+                        .HasForeignKey("Dept_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Departments");
                 });

@@ -13,6 +13,15 @@ namespace API.Models
         [ForeignKey("Departments")]
         public string Dept_Id { get; set; }
 
+        //public Employee(string employee_Id, string firstName, string lastName, Department? departments, string dept_Id)
+        //{
+        //    Employee_Id = employee_Id;
+        //    FirstName = firstName;
+        //    LastName = lastName;
+        //    Departments = departments;
+        //    Dept_Id = dept_Id;
+        //}
+
         public Employee(string employee_Id, string firstName, string lastName, string dept_Id)
         {
             Employee_Id = employee_Id;
@@ -20,5 +29,7 @@ namespace API.Models
             LastName = lastName;
             Dept_Id = dept_Id;
         }
+
+
     }
 }

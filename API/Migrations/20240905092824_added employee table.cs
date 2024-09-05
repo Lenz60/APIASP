@@ -33,17 +33,17 @@ namespace API.Migrations
                     Employee_Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DepartmentsDept_Id = table.Column<string>(type: "nvarchar(450)", nullable: true),
-                    Dept_Id = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Dept_Id = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Employees", x => x.Employee_Id);
                     table.ForeignKey(
-                        name: "FK_Employees_Departments_DepartmentsDept_Id",
-                        column: x => x.DepartmentsDept_Id,
+                        name: "FK_Employees_Departments_Dept_Id",
+                        column: x => x.Dept_Id,
                         principalTable: "Departments",
-                        principalColumn: "Dept_Id");
+                        principalColumn: "Dept_Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -59,9 +59,9 @@ namespace API.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Employees_DepartmentsDept_Id",
+                name: "IX_Employees_Dept_Id",
                 table: "Employees",
-                column: "DepartmentsDept_Id");
+                column: "Dept_Id");
         }
 
         /// <inheritdoc />

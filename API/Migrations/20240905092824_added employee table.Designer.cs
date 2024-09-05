@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20240905041950_added employee table")]
+    [Migration("20240905092824_added employee table")]
     partial class addedemployeetable
     {
         /// <inheritdoc />
@@ -45,12 +45,9 @@ namespace API.Migrations
                     b.Property<string>("Employee_Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<string>("DepartmentsDept_Id")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("Dept_Id")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -62,7 +59,7 @@ namespace API.Migrations
 
                     b.HasKey("Employee_Id");
 
-                    b.HasIndex("DepartmentsDept_Id");
+                    b.HasIndex("Dept_Id");
 
                     b.ToTable("Employees");
                 });
@@ -85,7 +82,9 @@ namespace API.Migrations
                 {
                     b.HasOne("API.Models.Department", "Departments")
                         .WithMany()
-                        .HasForeignKey("DepartmentsDept_Id");
+                        .HasForeignKey("Dept_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Departments");
                 });
