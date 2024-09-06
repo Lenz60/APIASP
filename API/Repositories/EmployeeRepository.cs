@@ -1,6 +1,7 @@
 ﻿using API.Context;
 using API.Models;
 using API.Repositories.Interfaces;
+using API.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Repositories
@@ -32,7 +33,7 @@ namespace API.Repositories
 
             _myContext.Employees.Add(newEmployee);
             return _myContext.SaveChanges();
-            
+
             //return countData;
         }
 
@@ -50,7 +51,7 @@ namespace API.Repositories
             return _myContext.Employees.Find(employeeId);
         }
 
-        public int  DeleteEmployee(string employeeId)
+        public int DeleteEmployee(string employeeId)
         {
             var selectedEmployee = GetEmployeeEntityById(employeeId);
 
@@ -75,6 +76,22 @@ namespace API.Repositories
        })
        .ToList();
 
+        }
+        public IEnumerable<EmployeeVM> EmployeeData()
+        {
+
+            //return _myContext.Employees.ToList();
+            return _myContext.Employees
+                .Include(s => s.Departments) // Ensure 'Department' is the correct navigation property
+                .Select(s => new EmployeeVM
+                {
+                    Employee_Id = s.Employee_Id,
+                    FullName = s.FirstName + "" + s.LastName,
+                    FirstName = s.FirstName,
+                    LastName = s.LastName,
+                    Dept_Name = s.Departments.Dept_Name // Ensure 'Dept_Name' is the correct property
+                })
+                .ToList();
         }
 
         public IEmployeeRepository.EmployeeDto GetEmployeeById(string employeeId)

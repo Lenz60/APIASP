@@ -41,6 +41,30 @@ namespace API.Controllers
                 });
             }
         }
+        [HttpGet("EmpData")]
+        public IActionResult EmployeeData()
+        {
+            var employees = _employeeRepository.EmployeeData();
+            // Wrap it on if else statement
+            if (employees != null && employees.Count() != 0)
+            {
+                return Ok(new
+                {
+                    statusCode = StatusCodes.Status200OK,
+                    message = "Data fetched successfully",
+                    data = employees,
+                });
+            }
+            else
+            {
+                return NotFound(new
+                {
+                    statusCode = StatusCodes.Status404NotFound,
+                    message = "Data is not found",
+                    data = employees,
+                });
+            }
+        }
 
         [HttpPost]
         public IActionResult AddEmployee(string? firstName, string? lastName, string? deptId)

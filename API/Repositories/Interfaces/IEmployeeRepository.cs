@@ -1,10 +1,12 @@
 ﻿using API.Models;
+using API.ViewModel;
 
 namespace API.Repositories.Interfaces
 {
     public interface IEmployeeRepository
     {
         IEnumerable<EmployeeDto> GetAllEmployee();
+        IEnumerable<EmployeeVM> EmployeeData();
         //IEnumerable<Employee> GetAllEmployee();
         EmployeeDto GetEmployeeById(string employeeId);
         int AddEmployee(string firstName, string lastName, string deptId);
