@@ -10,7 +10,7 @@ namespace API.Controllers
     [ApiController]
     public class EmployeesController : ControllerBase
     {
-        private EmployeeRepository _employeeRepository;
+        private readonly IEmployeeRepository _employeeRepository;
 
         public EmployeesController(EmployeeRepository employeeRepository)
         {
@@ -21,6 +21,31 @@ namespace API.Controllers
         public IActionResult GetAllEmployee()
         {
             var employees = _employeeRepository.GetAllEmployee();
+            // Wrap it on if else statement
+            if (employees != null && employees.Count() != 0)
+            {
+                return Ok(new
+                {
+                    statusCode = StatusCodes.Status200OK,
+                    message = "Data fetched successfully",
+                    data = employees,
+                });
+            }
+            else
+            {
+                return NotFound(new
+                {
+                    statusCode = StatusCodes.Status404NotFound,
+                    message = "Data is not found",
+                    data = employees,
+                });
+            }
+        }
+
+        [HttpGet("GetAllEmployeeData")]
+        public IActionResult GetAllEmployeeData()
+        {
+            var employees = _employeeRepository.EmployeeVMData2();
             // Wrap it on if else statement
             if (employees != null && employees.Count() != 0)
             {
@@ -67,7 +92,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEmployee(string? firstName, string? lastName, string? deptId)
+        public IActionResult AddEmployee(string? firstName, string? lastName, string? email, string? deptId)
         {
             if (string.IsNullOrWhiteSpace(firstName) && string.IsNullOrWhiteSpace(lastName) && string.IsNullOrWhiteSpace(deptId))
             {
@@ -78,30 +103,40 @@ namespace API.Controllers
                     data = null as object,
                 });
             }
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                return BadRequest(new
+                {
+                    statusCode = StatusCodes.Status400BadRequest,
+                    message = "Email of data can't be empty",
+                    data = null as object,
+                });
+            }
+
+            var result = _employeeRepository.AddEmployee(firstName, lastName, email, deptId);
+            if (result > 0)
+            {
+                var lastInserted = _employeeRepository.GetLastInsertedAccount();
+                return Ok(new
+                {
+                    statusCode = StatusCodes.Status200OK,
+                    message = "Data added successfully",
+                    data = lastInserted,
+                });
+            }
             else
             {
-                var result = _employeeRepository.AddEmployee(firstName, lastName, deptId);
-                if (result > 0)
+                return BadRequest(new
                 {
-                    var lastInserted = _employeeRepository.GetLastInserted();
-                    return Ok(new
-                    {
-                        statusCode = StatusCodes.Status200OK,
-                        message = "Data added successfully",
-                        data = lastInserted,
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        statusCode = StatusCodes.Status400BadRequest,
-                        message = "Data failed to add",
-                        data = result,
-                    });
-                }
+                    statusCode = StatusCodes.Status400BadRequest,
+                    message = "Data failed to add",
+                    data = result,
+                });
             }
+
         }
+
+
 
         [HttpGet("{employeeId}")]
         public IActionResult GetEmployeeById(string? employeeId)

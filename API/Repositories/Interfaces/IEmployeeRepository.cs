@@ -7,13 +7,20 @@ namespace API.Repositories.Interfaces
     {
         IEnumerable<EmployeeDto> GetAllEmployee();
         IEnumerable<EmployeeVM> EmployeeData();
+        IEnumerable<EmployeeDataVM> EmployeeVMData2();
+        IEnumerable<Employee> GetAllOfEmployeeData();
         //IEnumerable<Employee> GetAllEmployee();
         EmployeeDto GetEmployeeById(string employeeId);
-        int AddEmployee(string firstName, string lastName, string deptId);
+        int AddEmployee(string firstName, string lastName, string email, string dept_Id);
         int UpdateEmployee(Employee employee);
         int DeleteEmployee(string employeeId);
         Employee GetEmployeeEntityById(string employeeId);
         int CountEmployee();
+
+        string CheckSameUsername(string userName);
+        string GenerateNewEmpId();
+
+        AccountVM GetLastInsertedAccount();
 
         EmployeeDto GetLastInserted();
 
@@ -22,6 +29,7 @@ namespace API.Repositories.Interfaces
             public string Employee_Id { get; set; }
             public string FirstName { get; set; }
             public string LastName { get; set; }
+            public string Email { get; set; }
             public string Dept_Id { get; set; }
         }
 

@@ -15,27 +15,36 @@ namespace API.Repositories
             _myContext = myContext;
         }
 
-        public int AddEmployee(string firstName, string lastName, string deptId)
+        public int AddEmployee(string firstName, string lastName, string email, string dept_Id)
         {
-            var countData = CountEmployee();
+            
+            var baseUsername = firstName + lastName;
+            var username = CheckSameUsername(baseUsername);
             var year = DateTime.Now.Year.ToString();
             var date = DateTime.Now.Date.ToString("dd");
-            string newEmpId = $"{year}{date}{(countData + 1).ToString("D4")}";
-            var check = GetEmployeeById(newEmpId);
-            if (check != null)
+
+            var newEmpId = GenerateNewEmpId();
+
+
+            var employee = new EmployeeCreateVM
             {
-                countData = CountEmployee();
-                newEmpId = $"{year}{date}{(countData + 2).ToString("D4")}";
-            }
-            //deptId = newDeptId;
-
-            var newEmployee = new Employee(newEmpId, firstName, lastName, deptId);
-
+                Employee_Id = username,
+                FirstName = firstName,
+                LastName = lastName,
+                Email = email,
+                Dept_Id = dept_Id
+            };
+            var newEmployee = new Employee(newEmpId, firstName, lastName, email, dept_Id);
+            //_myContext.Employees.Add(employee);
             _myContext.Employees.Add(newEmployee);
-            return _myContext.SaveChanges();
+            //_myContext.SaveChanges();
 
-            //return countData;
+            var newAccount = new Account(newEmpId, username, "12345");
+            _myContext.Accounts.Add(newAccount);
+            return _myContext.SaveChanges();
         }
+
+
 
         public int CountEmployee()
         {
@@ -64,19 +73,7 @@ namespace API.Repositories
             return 0;
         }
 
-        public IEnumerable<IEmployeeRepository.EmployeeDto> GetAllEmployee()
-        {
-            return _myContext.Employees
-       .Select(e => new IEmployeeRepository.EmployeeDto
-       {
-           Employee_Id = e.Employee_Id,
-           FirstName = e.FirstName,
-           LastName = e.LastName,
-           Dept_Id = e.Dept_Id
-       })
-       .ToList();
-
-        }
+        
         public IEnumerable<EmployeeVM> EmployeeData()
         {
 
@@ -139,6 +136,108 @@ namespace API.Repositories
 
             }
             return 0;
+        }
+
+        public string CheckSameUsername(string baseUsername)
+        {
+
+            string newUsername = baseUsername;
+            int maxSuffix = -1;
+
+            // Get all usernames that start with the baseUsername
+            var similarUsernames = _myContext.Accounts
+                .Where(a => a.Username.StartsWith(baseUsername + "."))
+                .Select(a => a.Username)
+                .ToList();
+
+            foreach (var username in similarUsernames)
+            {
+                // Ensure that the suffix is numeric and directly follows the baseUsername
+                if (username.Length > baseUsername.Length)
+                {
+                    var suffixStr = username.Substring(baseUsername.Length + 1);
+                    if (int.TryParse(suffixStr, out int suffix))
+                    {
+                        if (suffix > maxSuffix)
+                        {
+                            maxSuffix = suffix;
+                        }
+                    }
+                }
+            }
+
+            // Increment the max suffix found
+            maxSuffix++;
+            newUsername = $"{baseUsername}.{maxSuffix.ToString("D3")}";
+
+            return newUsername;
+        }
+
+        public AccountVM GetLastInsertedAccount()
+        {
+            var lastInserted = _myContext.Employees
+                .Include(d => d.Departments)
+                .OrderByDescending(x => x.Employee_Id).FirstOrDefault();
+            if (lastInserted != null)
+            {
+                //return lastInserted;
+
+                return new AccountVM
+                {
+                    Nik = lastInserted.Employee_Id,
+                    FullName = $"{lastInserted.FirstName} {lastInserted.LastName}",
+                    DepartmentName = lastInserted.Departments.Dept_Name, // Assuming Department has a Name property
+                    Email = lastInserted.Email,
+
+                };
+            }
+            return null;
+        }
+
+        public IEnumerable<Employee> GetAllOfEmployeeData()
+        {
+            return _myContext.Employees.Include(a => a.Accounts).ToList();
+        }
+
+        public string GenerateNewEmpId()
+        {
+            var year = DateTime.Now.Year.ToString();
+            var date = DateTime.Now.Date.ToString("dd");
+            var countData = CountEmployee();
+            string newEmpId = $"{year}{date}{(countData + 1).ToString("D4")}";
+
+            // Ensure the newEmpId is unique
+            var check = GetEmployeeEntityById(newEmpId);
+            if (check != null)
+            {
+                newEmpId = $"{year}{date}{(countData + 2).ToString("D4")}";
+            }
+
+            return newEmpId;
+        }
+
+        public IEnumerable<IEmployeeRepository.EmployeeDto> GetAllEmployee()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<EmployeeDataVM> EmployeeVMData2()
+        {
+            var result = _myContext.Employees.Include(a => a.Accounts).Include(d => d.Departments).Select(e => new EmployeeDataVM
+            {
+                Nik = e.Employee_Id,
+                Email = e.Email,
+                Username = e.Accounts.Username,
+                FullName = e.FirstName + " " + e.LastName,
+                DepartmentName = e.Departments.Dept_Name
+
+            }
+            ).ToList();
+            if (result != null)
+            {
+                return result;
+            }
+            return null;
         }
 
         public class EmployeeDto
