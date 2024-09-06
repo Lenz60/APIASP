@@ -1,36 +1,5 @@
 [
   {
-    "ContainingType": "API.Controllers.AccountController",
-    "Method": "Register",
-    "RelativePath": "api/Account",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "firstName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "lastName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "deptId",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "API.Controllers.DepartmentsController",
     "Method": "GetAllDepartments",
     "RelativePath": "api/Departments",
