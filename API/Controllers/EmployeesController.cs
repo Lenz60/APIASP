@@ -1,6 +1,7 @@
 ﻿using API.Models;
 using API.Repositories;
 using API.Repositories.Interfaces;
+using API.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -92,9 +93,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEmployee(string? firstName, string? lastName, string? email, string? deptId)
+        public IActionResult AddEmployee(EmployeeCreateVM employee)
         {
-            if (string.IsNullOrWhiteSpace(firstName) && string.IsNullOrWhiteSpace(lastName) && string.IsNullOrWhiteSpace(deptId))
+            if (string.IsNullOrWhiteSpace(employee.FirstName) && string.IsNullOrWhiteSpace(employee.LastName) && string.IsNullOrWhiteSpace(employee.Dept_Id))
             {
                 return BadRequest(new
                 {
@@ -103,7 +104,7 @@ namespace API.Controllers
                     data = null as object,
                 });
             }
-            if (string.IsNullOrWhiteSpace(email))
+            if (string.IsNullOrWhiteSpace(employee.Email))
             {
                 return BadRequest(new
                 {
@@ -113,24 +114,58 @@ namespace API.Controllers
                 });
             }
 
-            var result = _employeeRepository.AddEmployee(firstName, lastName, email, deptId);
-            if (result > 0)
+            //var result = _employeeRepository.AddEmployee(firstName, lastName, email, deptId);
+            //if (result > 0)
+            //{
+            //    var lastInserted = _employeeRepository.GetLastInsertedAccount();
+            //    return Ok(new
+            //    {
+            //        statusCode = StatusCodes.Status200OK,
+            //        message = "Data added successfully",
+            //        data = lastInserted,
+            //    });
+            //}
+            //else
+            //{
+            //    return BadRequest(new
+            //    {
+            //        statusCode = StatusCodes.Status400BadRequest,
+            //        message = "Data failed to add",
+            //        data = result,
+            //    });
+            //}
+
+            try
             {
-                var lastInserted = _employeeRepository.GetLastInsertedAccount();
-                return Ok(new
+                var result = _employeeRepository.AddEmployee(employee.FirstName, employee.LastName, employee.Email, employee.Dept_Id);
+                if (result > 0)
                 {
-                    statusCode = StatusCodes.Status200OK,
-                    message = "Data added successfully",
-                    data = lastInserted,
-                });
+                    var lastInserted = _employeeRepository.GetLastInsertedAccount();
+                    return Ok(new
+                    {
+                        statusCode = StatusCodes.Status200OK,
+                        message = "Data added successfully",
+                        data = lastInserted,
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        statusCode = StatusCodes.Status400BadRequest,
+                        message = "Data failed to add",
+                        data = result,
+                    });
+                }
+
             }
-            else
+            catch (Exception e)
             {
                 return BadRequest(new
                 {
                     statusCode = StatusCodes.Status400BadRequest,
-                    message = "Data failed to add",
-                    data = result,
+                    message = e.Message,
+                    data = null as object,
                 });
             }
 

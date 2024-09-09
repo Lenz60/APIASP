@@ -20,6 +20,8 @@ namespace API.Repositories.Interfaces
         string CheckSameUsername(string userName);
         string GenerateNewEmpId();
 
+        string checkExists(string value, string context);
+
         AccountVM GetLastInsertedAccount();
 
         EmployeeDto GetLastInserted();

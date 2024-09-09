@@ -17,8 +17,8 @@ namespace API.Repositories
 
         public int AddEmployee(string firstName, string lastName, string email, string dept_Id)
         {
-            
-            var baseUsername = firstName + lastName;
+
+            var baseUsername = firstName + "." + lastName;
             var username = CheckSameUsername(baseUsername);
             var year = DateTime.Now.Year.ToString();
             var date = DateTime.Now.Date.ToString("dd");
@@ -26,7 +26,7 @@ namespace API.Repositories
             var newEmpId = GenerateNewEmpId();
 
 
-            var employee = new EmployeeCreateVM
+            var employee = new EmployeeVM2
             {
                 Employee_Id = username,
                 FirstName = firstName,
@@ -34,16 +34,82 @@ namespace API.Repositories
                 Email = email,
                 Dept_Id = dept_Id
             };
+
+            //
+            //*
+            //var checkExistingEmail = checkExists(email, "employee");
+            //try
+            //{ 
+            //    if(checkExisting != null)
+            //    {
+            //        checkExists(dept_Id, "departments");
+            //    }
+            //}
+            //catch (Exception ex) {
+            //    if(ex.Message == null)
+            //    {
+            //        throw new Exception("Internal Server Error");
+            //    }
+            //}
+            //if (checkExistingEmail == "Email:200")
+            //{
+            //    var checkExistingDept = checkExists(dept_Id, "departments");
+            //    if(checkExistingDept == "Department:200")
+            //    {
+            //        var newEmployee = new Employee(newEmpId, firstName, lastName, email, dept_Id);
+            //        //_myContext.Employees.Add(employee);
+            //        _myContext.Employees.Add(newEmployee);
+            //    }
+            //}
+            //else
+            //{
+            //    throw new Exception("Internal server error");
+            //}
+            //*/
+
+            var emailExists = _myContext.Employees.Any(e => e.Email == email);
+            if (emailExists)
+            {
+                throw new Exception($"Email {email} already exists");
+            }
+            var DeptExists = _myContext.Departments.Any(d => d.Dept_Id == dept_Id);
+            if (!DeptExists)
+            {
+                throw new Exception($"Department with ID : {dept_Id} does not exist");
+            }
+
+            //_myContext.SaveChanges();
             var newEmployee = new Employee(newEmpId, firstName, lastName, email, dept_Id);
             //_myContext.Employees.Add(employee);
             _myContext.Employees.Add(newEmployee);
-            //_myContext.SaveChanges();
 
             var newAccount = new Account(newEmpId, username, "12345");
             _myContext.Accounts.Add(newAccount);
             return _myContext.SaveChanges();
         }
 
+        public string checkExists(string value, string context)
+        {
+            if (context == "employee")
+            {
+
+                if (_myContext.Employees.Any(e => e.Email == value)) {
+                    return ("Email duplicate");
+                }
+                return ("Email:200");
+
+            }
+            else
+            {
+                if(_myContext.Departments.Any(d => d.Dept_Id != value))
+                {
+                    return ("Department duplicate");
+                }
+                return ("Department:200");
+
+            }
+            
+        }
 
 
         public int CountEmployee()
@@ -73,7 +139,7 @@ namespace API.Repositories
             return 0;
         }
 
-        
+
         public IEnumerable<EmployeeVM> EmployeeData()
         {
 
@@ -141,12 +207,13 @@ namespace API.Repositories
         public string CheckSameUsername(string baseUsername)
         {
 
+
             string newUsername = baseUsername;
             int maxSuffix = -1;
 
             // Get all usernames that start with the baseUsername
             var similarUsernames = _myContext.Accounts
-                .Where(a => a.Username.StartsWith(baseUsername + "."))
+                .Where(a => a.Username.StartsWith(baseUsername))
                 .Select(a => a.Username)
                 .ToList();
 
@@ -155,7 +222,7 @@ namespace API.Repositories
                 // Ensure that the suffix is numeric and directly follows the baseUsername
                 if (username.Length > baseUsername.Length)
                 {
-                    var suffixStr = username.Substring(baseUsername.Length + 1);
+                    var suffixStr = username.Substring(baseUsername.Length);
                     if (int.TryParse(suffixStr, out int suffix))
                     {
                         if (suffix > maxSuffix)
@@ -168,7 +235,7 @@ namespace API.Repositories
 
             // Increment the max suffix found
             maxSuffix++;
-            newUsername = $"{baseUsername}.{maxSuffix.ToString("D3")}";
+            newUsername = $"{baseUsername}{maxSuffix.ToString("D3")}";
 
             return newUsername;
         }
@@ -239,6 +306,8 @@ namespace API.Repositories
             }
             return null;
         }
+
+
 
         public class EmployeeDto
         {

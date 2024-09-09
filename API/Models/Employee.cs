@@ -19,9 +19,9 @@ namespace API.Models
 
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
-        
-        
-        public string? Email { get; set; }
+
+        [Required]
+        public string Email { get; set; }
 
         public virtual Department? Departments { get; set; }
         [ForeignKey("Departments")]

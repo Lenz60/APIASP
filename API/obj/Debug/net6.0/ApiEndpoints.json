@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "API.Controllers.AccountController",
+    "Method": "Get",
+    "RelativePath": "api/Account",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
+    "Method": "Post",
+    "RelativePath": "api/Account",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "API.ViewModel.EmployeeCreateVM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
+    "Method": "Delete",
+    "RelativePath": "api/Account/{accountId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "credentials",
+        "Type": "API.ViewModel.Credentials",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.DepartmentsController",
     "Method": "GetAllDepartments",
     "RelativePath": "api/Departments",
@@ -97,24 +155,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "firstName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "lastName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "deptId",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "employee",
+        "Type": "API.ViewModel.EmployeeCreateVM",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
