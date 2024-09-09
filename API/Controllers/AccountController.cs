@@ -53,11 +53,16 @@ namespace API.Controllers
                 if (result)
                 {
                     var user = _accountRepository.GetAccountDataByCreds(credentials.Username);
+                    var token = _accountRepository.GenerateToken(new CredsPayload
+                    {
+                        Username = credentials.Username,
+                        Password = credentials.Password
+                    });
                     return Ok(new
                     {
                         statusCode = StatusCodes.Status200OK,
                         message = $"Login success!, Welcome {user.FullName}",
-                        data = user,
+                        data = token,
                     });
                 }
                 else

@@ -7,12 +7,36 @@
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\viewmodel\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\viewmodel\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\repositories\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\helper\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\helper\\jwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\helper\\interfaces\\ijwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\helper\\interfaces\\ijwthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\repositories\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\viewmodel\\accountvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +47,12 @@
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\repositories\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\context\\mycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\viewmodel\\employeedatavm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -114,11 +130,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IJWTHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\Interfaces\\IJWTHelper.cs",
+              "RelativeDocumentMoniker": "API\\Helper\\Interfaces\\IJWTHelper.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\Interfaces\\IJWTHelper.cs",
+              "RelativeToolTip": "API\\Helper\\Interfaces\\IJWTHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T07:54:34.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JWTHelper.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\JWTHelper.cs",
+              "RelativeDocumentMoniker": "API\\Helper\\JWTHelper.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\JWTHelper.cs",
+              "RelativeToolTip": "API\\Helper\\JWTHelper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T07:33:14.271Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -128,22 +170,9 @@
               "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\AccountController.cs",
               "RelativeToolTip": "API\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowDoAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwFkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T04:11:53.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "RelativeToolTip": "API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wA4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T04:23:09.496Z",
               "EditorCaption": ""
             },
             {
@@ -154,7 +183,7 @@
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T04:45:17.219Z",
               "EditorCaption": ""
@@ -162,71 +191,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "API\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T04:44:20.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "IAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IAccountRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IAccountRepository.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IAccountRepository.cs",
               "RelativeToolTip": "API\\Repositories\\Interfaces\\IAccountRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:58:05.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\AccountRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\AccountRepository.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\AccountRepository.cs",
               "RelativeToolTip": "API\\Repositories\\AccountRepository.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAAAIwOIAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAqwPkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T03:56:26.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Payload.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\Payload.cs",
+              "RelativeDocumentMoniker": "API\\ViewModel\\Payload.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\Payload.cs",
+              "RelativeToolTip": "API\\ViewModel\\Payload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T07:33:52.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-09T07:38:01.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AccountVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\AccountVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\AccountVM.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\AccountVM.cs",
               "RelativeToolTip": "API\\ViewModel\\AccountVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA1wBAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-06T08:14:33.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "MyContext.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Context\\MyContext.cs",
               "RelativeDocumentMoniker": "API\\Context\\MyContext.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Context\\MyContext.cs",
               "RelativeToolTip": "API\\Context\\MyContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T06:20:59.734Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "EmployeesController.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\EmployeesController.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
+              "RelativeToolTip": "API\\Controllers\\EmployeesController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T04:44:20.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-05T04:23:09.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\EmployeeRepository.cs",
@@ -239,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "EmployeeDataVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\EmployeeDataVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\EmployeeDataVM.cs",
@@ -252,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "20240909015839_added non nullable on email employee.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240909015839_added non nullable on email employee.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20240909015839_added non nullable on email employee.cs",
@@ -260,11 +328,12 @@
               "RelativeToolTip": "API\\Migrations\\20240909015839_added non nullable on email employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T01:58:39.684Z"
+              "WhenOpened": "2024-09-09T01:58:39.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "Account.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Account.cs",
               "RelativeDocumentMoniker": "API\\Models\\Account.cs",
@@ -272,11 +341,12 @@
               "RelativeToolTip": "API\\Models\\Account.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T06:45:04.547Z"
+              "WhenOpened": "2024-09-06T06:45:04.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "EmployeeCreateVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\EmployeeCreateVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\EmployeeCreateVM.cs",
@@ -289,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "EmployeeVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\EmployeeVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\EmployeeVM.cs",
@@ -302,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "API\\Models\\Employee.cs",
@@ -310,11 +380,12 @@
               "RelativeToolTip": "API\\Models\\Employee.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAWwBYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T03:54:52.234Z"
+              "WhenOpened": "2024-09-05T03:54:52.234Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Department.cs",
               "RelativeDocumentMoniker": "API\\Models\\Department.cs",
@@ -322,35 +393,38 @@
               "RelativeToolTip": "API\\Models\\Department.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T06:16:44.246Z"
+              "WhenOpened": "2024-09-03T06:16:44.246Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "20240906162346_added nullable on employee.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240906162346_added nullable on employee.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20240906162346_added nullable on employee.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240906162346_added nullable on employee.cs",
               "RelativeToolTip": "API\\Migrations\\20240906162346_added nullable on employee.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-06T16:23:47.151Z"
+              "WhenOpened": "2024-09-06T16:23:47.151Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "20240905092824_added employee table.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240905092824_added employee table.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20240905092824_added employee table.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240905092824_added employee table.cs",
               "RelativeToolTip": "API\\Migrations\\20240905092824_added employee table.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:28:24.879Z"
+              "WhenOpened": "2024-09-05T09:28:24.879Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\DepartmentsController.cs",
@@ -358,11 +432,12 @@
               "RelativeToolTip": "API\\Controllers\\DepartmentsController.cs",
               "ViewState": "AgIAAEoAAAAAAAAAAAAwwG8AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T08:09:10.263Z"
+              "WhenOpened": "2024-09-03T08:09:10.263Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\DepartmentRepository.cs",
@@ -375,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IDepartmentRepository.cs",
@@ -383,11 +458,12 @@
               "RelativeToolTip": "API\\Repositories\\Interfaces\\IDepartmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T07:44:44.054Z"
+              "WhenOpened": "2024-09-03T07:44:44.054Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "API\\Models\\Roles.cs",
@@ -395,11 +471,12 @@
               "RelativeToolTip": "API\\Models\\Roles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T07:16:17.446Z"
+              "WhenOpened": "2024-09-03T07:16:17.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "MyContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\MyContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\MyContextModelSnapshot.cs",
@@ -407,11 +484,12 @@
               "RelativeToolTip": "API\\Migrations\\MyContextModelSnapshot.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T09:21:29.856Z"
+              "WhenOpened": "2024-09-05T09:21:29.856Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Validation.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\Validation.cs",
               "RelativeDocumentMoniker": "API\\Helper\\Validation.cs",
@@ -419,11 +497,12 @@
               "RelativeToolTip": "API\\Helper\\Validation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T05:07:25.372Z"
+              "WhenOpened": "2024-09-04T05:07:25.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "API\\Properties\\launchSettings.json",
@@ -431,11 +510,12 @@
               "RelativeToolTip": "API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-03T04:46:10.561Z"
+              "WhenOpened": "2024-09-03T04:46:10.561Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\WeatherForecastController.cs",
@@ -443,7 +523,8 @@
               "RelativeToolTip": "API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T04:48:42.965Z"
+              "WhenOpened": "2024-09-03T04:48:42.965Z",
+              "EditorCaption": ""
             }
           ]
         }

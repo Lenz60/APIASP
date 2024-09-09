@@ -16,6 +16,8 @@ namespace API.Repositories.Interfaces
         int CountEmployee();
         AccountVM GetLastInsertedAccount();
 
+       string GenerateToken(CredsPayload payload);
+
         AccountDataVm GetAccountDataByCreds(string username);
 
     }

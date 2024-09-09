@@ -46,6 +46,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "JWT": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.13, )"
@@ -59,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "NEST.JsonNetSerializer": {
+              "target": "Package",
+              "version": "[7.17.5, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

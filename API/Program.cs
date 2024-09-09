@@ -1,4 +1,5 @@
 using API.Context;
+using API.Helper;
 using API.Repositories;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,9 +12,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<MyContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("API")));
+builder.Services.AddDbContext<MyContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Secret")));
+builder.Services.AddScoped<DepartmentRepository>();
 builder.Services.AddScoped<DepartmentRepository>();
 builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<AccountRepository>();
+builder.Services.AddScoped<JWTHelper>();
 
 
 

@@ -87,3 +87,8 @@ C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Elasticsearch.Net.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\JWT.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.JsonNetSerializer.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -1,4 +1,5 @@
 ﻿using API.Context;
+using API.Helper;
 using API.Models;
 using API.Repositories.Interfaces;
 using API.ViewModel;
@@ -9,10 +10,12 @@ namespace API.Repositories
     public class AccountRepository : IAccountRepository
     {
         private readonly MyContext _myContext;
+        private readonly JWTHelper _jwtContext;
 
-        public AccountRepository(MyContext myContext)
+        public AccountRepository(MyContext myContext, JWTHelper jwtContext)
         {
             _myContext = myContext;
+            _jwtContext = jwtContext; 
         }
 
         public bool Login(Credentials credentials)
@@ -58,29 +61,6 @@ namespace API.Repositories
             return false;
         }
 
-        private string CheckCreds(string username, string password)
-        {
-            if (username.Contains("@"))
-            {
-                var checkEmail = _myContext.Accounts.Include(e => e.Employees).Where(a => a.Employees.Email == username);
-                if (checkEmail != null)
-                {
-                    var checkPass = _myContext.Accounts.Where(a => a.Password == password);
-                    if (checkPass != null)
-                    {
-                        return (checkEmail.ToString());
-                    }
-
-                }
-                return ("Email:404");
-            }
-            var checkUsername = _myContext.Accounts.Where(a => a.Username == username && a.Password == password);
-            if (checkUsername != null)
-            {
-                return checkUsername.ToString();
-            }
-            return null;
-        }
 
         public int AddAccount(string firstName, string lastName, string email, string dept_Id)
         {
@@ -262,6 +242,12 @@ namespace API.Repositories
                 }
                 return null;
             }
+
+        }
+
+        public string GenerateToken(CredsPayload payload)
+        {
+            return _jwtContext.GenerateToken(payload);
 
         }
     }
