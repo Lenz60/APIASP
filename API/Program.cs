@@ -2,6 +2,7 @@ using API.Context;
 using API.Helper;
 using API.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Nest;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddScoped<DepartmentRepository>();
 builder.Services.AddScoped<EmployeeRepository>();
 builder.Services.AddScoped<AccountRepository>();
 builder.Services.AddScoped<JWTHelper>();
+builder.Services.AddScoped<BcryptHelper>();
 
 
 

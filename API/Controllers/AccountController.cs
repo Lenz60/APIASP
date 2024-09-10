@@ -56,7 +56,7 @@ namespace API.Controllers
                     var token = _accountRepository.GenerateToken(new CredsPayload
                     {
                         Username = credentials.Username,
-                        Password = credentials.Password
+                       
                     });
                     return Ok(new
                     {
@@ -115,7 +115,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] EmployeeCreateVM employee)
+        public IActionResult Post([FromBody] EmployeeCreateVM2 employee)
         {
 
             if (string.IsNullOrWhiteSpace(employee.FirstName) && string.IsNullOrWhiteSpace(employee.LastName) && string.IsNullOrWhiteSpace(employee.Dept_Id))
@@ -139,7 +139,7 @@ namespace API.Controllers
 
             try
             {
-                var result = _accountRepository.AddAccount(employee.FirstName, employee.LastName, employee.Email, employee.Dept_Id);
+                var result = _accountRepository.AddAccount(employee.FirstName, employee.LastName, employee.Email,employee.Password, employee.Dept_Id);
                 if (result > 0)
                 {
                     var lastInserted = _accountRepository.GetLastInsertedAccount();

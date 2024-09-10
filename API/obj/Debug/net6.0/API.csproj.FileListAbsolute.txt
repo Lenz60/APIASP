@@ -92,3 +92,4 @@ C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\JWT.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.JsonNetSerializer.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\BCrypt.Net-Next.dll

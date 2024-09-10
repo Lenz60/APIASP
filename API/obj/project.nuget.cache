@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "N87BavY0dmI=",
+  "dgSpecHash": "rJOkbRy3Pis=",
   "success": true,
   "projectFilePath": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\elasticsearch.net\\7.17.5\\elasticsearch.net.7.17.5.nupkg.sha512",
     "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rafly.wicaksana\\.nuget\\packages\\jwt\\10.1.1\\jwt.10.1.1.nupkg.sha512",

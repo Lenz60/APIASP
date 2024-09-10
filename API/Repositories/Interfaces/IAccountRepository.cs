@@ -7,7 +7,7 @@ namespace API.Repositories.Interfaces
     {
         bool Login(Credentials credentials);
         IEnumerable<AccountDataVm> GetAccountData();
-        int AddAccount(string firstName, string lastName, string email, string dept_Id);
+        int AddAccount(string firstName, string lastName, string email,string password, string dept_Id);
 
         int DeleteAccount(string accountId);
         //string GenerateUsername(string userName);

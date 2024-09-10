@@ -11,11 +11,13 @@ namespace API.Repositories
     {
         private readonly MyContext _myContext;
         private readonly JWTHelper _jwtContext;
+        private readonly BcryptHelper _bcryptContext;
 
-        public AccountRepository(MyContext myContext, JWTHelper jwtContext)
+        public AccountRepository(MyContext myContext, JWTHelper jwtContext, BcryptHelper bcryptHelper)
         {
             _myContext = myContext;
-            _jwtContext = jwtContext; 
+            _jwtContext = jwtContext;
+            _bcryptContext = bcryptHelper;
         }
 
         public bool Login(Credentials credentials)
@@ -28,7 +30,7 @@ namespace API.Repositories
                     throw new Exception($"Email {credentials.Username} is not found, Please register first");
                 }
 
-                var checkPass = CheckPass(credentials.Password);
+                var checkPass = CheckPass(credentials.Username,credentials.Password);
                 return checkPass;
 
             }
@@ -41,7 +43,7 @@ namespace API.Repositories
                 }
                 else
                 {
-                    var checkPass = CheckPass(credentials.Password);
+                    var checkPass = CheckPass(credentials.Username,credentials.Password);
                     return checkPass;
 
                 }
@@ -51,18 +53,22 @@ namespace API.Repositories
 
         }
 
-        private bool CheckPass(string password)
+        private bool CheckPass(string username,string password)
         {
-            var checkPass = _myContext.Accounts.Where(a => a.Password == password).Count();
-            if (checkPass > 0)
-            {
-                return true;
-            }
-            return false;
+            //Verify the bcrypt hash
+            var DBPass = _myContext.Accounts.Where(a => a.Username == username).Select(a => a.Password).FirstOrDefault();
+            var verify = _bcryptContext.VerifyPassword(password, DBPass);
+            return verify;
+            //var checkPass = _myContext.Accounts.Where(a => a.Password == password).Count();
+            //if (checkPass > 0)
+            //{
+            //    return true;
+            //}
+            //return false;
         }
 
 
-        public int AddAccount(string firstName, string lastName, string email, string dept_Id)
+        public int AddAccount(string firstName, string lastName, string email, string password, string dept_Id)
         {
             var baseUsername = firstName + "." + lastName;
             var username = GenerateUsername(baseUsername);
@@ -99,20 +105,36 @@ namespace API.Repositories
             //_myContext.Employees.Add(employee);
             _myContext.Employees.Add(newEmployee);
 
-            var newAccount = new Account(newEmpId, username, "12345");
+            var hashPassword = _bcryptContext.HashPassword(password);
+            var hashedPassword = "";
+            if (hashPassword != null)
+            {
+                hashedPassword = hashPassword;
+            }
+            else
+            {
+                throw new Exception("Password failed to hash");
+            }
+
+            var newAccount = new Account(newEmpId, username, hashedPassword);
             _myContext.Accounts.Add(newAccount);
             return _myContext.SaveChanges();
         }
 
         private string GenerateUsername(string userName)
         {
-            var username = userName.ToLower();
+            var baseUsername = userName.ToLower();
+            var username = baseUsername;
             int count = 1;
             while (_myContext.Accounts.Any(a => a.Username == username))
             {
-                count++;
+                if (username.Length > baseUsername.Length)
+                {
+                    username = username.Substring(0, username.Length - 3);
+                }
 
                 username = $"{username}{count.ToString("D3")}";
+                count++;
             }
             return username;
         }

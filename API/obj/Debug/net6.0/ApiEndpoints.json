@@ -19,7 +19,7 @@
     "Parameters": [
       {
         "Name": "employee",
-        "Type": "API.ViewModel.EmployeeCreateVM",
+        "Type": "API.ViewModel.EmployeeCreateVM2",
         "IsRequired": true
       }
     ],
