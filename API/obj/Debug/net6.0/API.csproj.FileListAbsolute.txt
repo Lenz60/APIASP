@@ -7,7 +7,10 @@ C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\API.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\API.pdb
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\BCrypt.Net-Next.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Elasticsearch.Net.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Humanizer.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\JWT.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -37,6 +40,9 @@ C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.OpenApi
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.JsonNetSerializer.dll
+C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -87,9 +93,3 @@ C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\refint\API.dll
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\rafly.wicaksana\source\repos\API\API\obj\Debug\net6.0\ref\API.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Elasticsearch.Net.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\JWT.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Nest.JsonNetSerializer.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\rafly.wicaksana\source\repos\API\API\bin\Debug\net6.0\BCrypt.Net-Next.dll
