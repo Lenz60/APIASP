@@ -4,9 +4,15 @@ namespace API.Helper
 {
     public class BcryptHelper : IBcryptHelper
     {
+        public string GenerateSalt()
+        {
+            var saltGenerated = BCrypt.Net.BCrypt.GenerateSalt(12);
+            return saltGenerated;
+        }
+
         public string HashPassword(string password)
         {
-            var hash = BCrypt.Net.BCrypt.HashPassword(password);
+            var hash = BCrypt.Net.BCrypt.HashPassword(password, GenerateSalt());
             return hash;
         }
 

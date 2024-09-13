@@ -30,7 +30,7 @@ namespace API.Repositories
                     throw new Exception($"Email {credentials.Username} is not found, Please register first");
                 }
 
-                var checkPass = CheckPass(credentials.Username,credentials.Password);
+                var checkPass = CheckPass(credentials.Username, credentials.Password);
                 return checkPass;
 
             }
@@ -43,7 +43,7 @@ namespace API.Repositories
                 }
                 else
                 {
-                    var checkPass = CheckPass(credentials.Username,credentials.Password);
+                    var checkPass = CheckPass(credentials.Username, credentials.Password);
                     return checkPass;
 
                 }
@@ -53,10 +53,18 @@ namespace API.Repositories
 
         }
 
-        private bool CheckPass(string username,string password)
+        private bool CheckPass(string username, string password)
         {
             //Verify the bcrypt hash
-            var DBPass = _myContext.Accounts.Where(a => a.Username == username).Select(a => a.Password).FirstOrDefault();
+            var DBPass = "";
+            if (username.Contains("@"))
+            {
+                DBPass = _myContext.Employees.Include(e => e.Accounts).Where(e => e.Email == username).Select(e => e.Accounts.Password).FirstOrDefault();
+            }
+            else
+            {
+                DBPass = _myContext.Accounts.Where(a => a.Username == username).Select(a => a.Password).FirstOrDefault();
+            }
             var verify = _bcryptContext.VerifyPassword(password, DBPass);
             return verify;
             //var checkPass = _myContext.Accounts.Where(a => a.Password == password).Count();
