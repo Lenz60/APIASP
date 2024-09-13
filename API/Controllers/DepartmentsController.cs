@@ -1,5 +1,7 @@
 ﻿using API.Models;
 using API.Repositories;
+using API.ViewModel;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json.Serialization;
@@ -8,6 +10,7 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowSpecificOrigin")]
     public class DepartmentsController : ControllerBase
     {
         private DepartmentRepository _departmentRepository;
@@ -18,6 +21,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        
         public IActionResult GetAllDepartments()
         {
             var departments = _departmentRepository.GetAllDepartments();
@@ -46,9 +50,10 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddDepartment(string? deptInitial, string? deptName)
+        
+        public IActionResult AddDepartment([FromBody]AddDepartment addDepartment)
         {
-            if (string.IsNullOrWhiteSpace(deptInitial) && string.IsNullOrWhiteSpace(deptName))
+            if (string.IsNullOrWhiteSpace(addDepartment.Initial) && string.IsNullOrWhiteSpace(addDepartment.Name))
             {
 
                 return BadRequest(new
@@ -60,7 +65,7 @@ namespace API.Controllers
             }
             else
             {
-                if (string.IsNullOrWhiteSpace(deptInitial))
+                if (string.IsNullOrWhiteSpace(addDepartment.Initial))
                 {
 
                     return BadRequest(new
@@ -69,12 +74,12 @@ namespace API.Controllers
                         message = "Dept Initial can't be empty",
                         data = new
                         {
-                            DeptInitial = deptInitial,
-                            DeptName = deptName
+                            DeptInitial = addDepartment.Initial,
+                            DeptName = addDepartment.Name
                         },
                     });
                 }
-                if (string.IsNullOrWhiteSpace(deptName))
+                if (string.IsNullOrWhiteSpace(addDepartment.Name))
                 {
 
                     return BadRequest(new
@@ -83,12 +88,12 @@ namespace API.Controllers
                         message = "Dept Name can't be empty",
                         data = new
                         {
-                            DeptInitial = deptInitial,
-                            DeptName = deptName
+                            DeptInitial = addDepartment.Initial,
+                            DeptName = addDepartment.Name
                         },
                     });
                 }
-                var result = _departmentRepository.AddDepartment(deptInitial, deptName);
+                var result = _departmentRepository.AddDepartment(addDepartment.Initial, addDepartment.Name);
                 if (result > 0)
                 {
                     var lastInserted = _departmentRepository.GetLastInserted();
@@ -107,14 +112,15 @@ namespace API.Controllers
                     message = "Data can't be empty",
                     data = new
                     {
-                        DeptInitial = deptInitial,
-                        DeptName = deptName
+                        DeptInitial = addDepartment.Initial,
+                        DeptName = addDepartment.Name
                     },
                 });
             }
         }
 
         [HttpPut]
+        
         public IActionResult UpdateDepartment(Department? department)
         {
             var get = _departmentRepository.GetDepartmentById(department.Dept_Id);
@@ -160,6 +166,7 @@ namespace API.Controllers
         }
 
         [HttpDelete("{deptId}")]
+        
         public IActionResult DeleteDepartment(string? deptId)
         {
             if (string.IsNullOrWhiteSpace(deptId))
@@ -195,6 +202,7 @@ namespace API.Controllers
         }
 
         [HttpGet("{deptId}")]
+        
         public IActionResult GetDepartmentById(string? deptId)
         {
             if (string.IsNullOrWhiteSpace(deptId))

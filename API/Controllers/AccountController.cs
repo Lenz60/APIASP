@@ -1,6 +1,7 @@
 ﻿using API.Repositories;
 using API.Repositories.Interfaces;
 using API.ViewModel;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -9,6 +10,7 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowSpecificOrigin")]
     public class AccountController : ControllerBase
     {
         private readonly IAccountRepository _accountRepository;
@@ -19,6 +21,7 @@ namespace API.Controllers
         }
 
         [HttpPost("Login")]
+        
         public IActionResult Login(Credentials credentials)
         {
             if(string.IsNullOrWhiteSpace(credentials.Username) && string.IsNullOrWhiteSpace(credentials.Password)){
@@ -88,6 +91,7 @@ namespace API.Controllers
         
 
         [HttpGet]
+        
         public IActionResult Get()
         {
             var employees = _accountRepository.GetAccountData();
@@ -115,6 +119,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
+        
         public IActionResult Post([FromBody] EmployeeCreateVM2 employee)
         {
 
@@ -173,7 +178,7 @@ namespace API.Controllers
         }
 
         [HttpDelete("{accountId}")]
-
+        
         public IActionResult Delete(string accountId)
         {
             try

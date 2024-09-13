@@ -2,6 +2,7 @@
 using API.Repositories;
 using API.Repositories.Interfaces;
 using API.ViewModel;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,7 @@ namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowSpecificOrigin")]
     public class EmployeesController : ControllerBase
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -19,6 +21,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        
         public IActionResult GetAllEmployee()
         {
             var employees = _employeeRepository.GetAllEmployee();
@@ -44,6 +47,7 @@ namespace API.Controllers
         }
 
         [HttpGet("GetAllEmployeeData")]
+        
         public IActionResult GetAllEmployeeData()
         {
             var employees = _employeeRepository.EmployeeVMData2();
@@ -68,6 +72,7 @@ namespace API.Controllers
             }
         }
         [HttpGet("EmpData")]
+        
         public IActionResult EmployeeData()
         {
             var employees = _employeeRepository.EmployeeData();
@@ -93,6 +98,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
+        
         public IActionResult AddEmployee(EmployeeCreateVM employee)
         {
             if (string.IsNullOrWhiteSpace(employee.FirstName) && string.IsNullOrWhiteSpace(employee.LastName) && string.IsNullOrWhiteSpace(employee.Dept_Id))
@@ -174,6 +180,7 @@ namespace API.Controllers
 
 
         [HttpGet("{employeeId}")]
+        
         public IActionResult GetEmployeeById(string? employeeId)
         {
             if (string.IsNullOrWhiteSpace(employeeId))
@@ -211,6 +218,7 @@ namespace API.Controllers
         }
 
         [HttpPut]
+        
         public IActionResult UpdateEmployee(Employee? employee)
         {
             var get = _employeeRepository.GetEmployeeEntityById(employee.Employee_Id);
@@ -258,6 +266,7 @@ namespace API.Controllers
         }
 
         [HttpDelete("{employeeId}")]
+        
         public IActionResult DeleteEmployee(string? employeeId)
         {
             if (string.IsNullOrWhiteSpace(employeeId))

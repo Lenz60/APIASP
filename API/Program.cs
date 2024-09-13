@@ -21,6 +21,21 @@ builder.Services.AddScoped<AccountRepository>();
 builder.Services.AddScoped<JWTHelper>();
 builder.Services.AddScoped<BcryptHelper>();
 
+//builder.Services.AddCors(options =>
+//            {
+//                options.AddPolicy("AllowSpecificOrigin",
+//                    builder => builder
+//                        // Replace with your allowed origin
+//                        .AllowAnyHeader()
+//                        .AllowAnyMethod());
+//            });
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+// Enable CORS
+
 
 
 var app = builder.Build();
@@ -34,6 +49,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors("AllowSpecificOrigin");
 app.UseAuthorization();
 
 app.MapControllers();
