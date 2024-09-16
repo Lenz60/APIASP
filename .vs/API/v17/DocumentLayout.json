@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\wwwroot\\script\\departmentscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\script\\departmentscript.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\views\\layout\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\views\\layout\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\views\\department\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\viewmodel\\departmentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -45,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{37858B8D-E993-489E-BBC1-4DE6D5829CCB}|API\\API.csproj|solutionrelative:api\\api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\views\\layout\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|solutionrelative:client\\views\\layout\\mainlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6E901750-E0B9-4AEE-B290-0A456EFC3F5A}|Client\\Client.csproj|c:\\users\\rafly.wicaksana\\source\\repos\\api\\client\\views\\register\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -146,33 +142,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DepartmentVM.cs",
-              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\DepartmentVM.cs",
-              "RelativeDocumentMoniker": "API\\ViewModel\\DepartmentVM.cs",
-              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\DepartmentVM.cs",
-              "RelativeToolTip": "API\\ViewModel\\DepartmentVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T09:26:05.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\AccountController.cs",
               "RelativeToolTip": "API\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAwwJkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T06:47:02.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DepartmentController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Controllers\\DepartmentController.cs",
               "RelativeDocumentMoniker": "Client\\Controllers\\DepartmentController.cs",
@@ -185,59 +168,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DepartmentScript.js",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\DepartmentScript.js",
               "RelativeDocumentMoniker": "Client\\wwwroot\\Script\\DepartmentScript.js",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\DepartmentScript.js",
               "RelativeToolTip": "Client\\wwwroot\\Script\\DepartmentScript.js",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwFUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAcwEUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-09-13T04:18:50.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmployeesController.cs",
-              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\EmployeesController.cs",
-              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\EmployeesController.cs",
-              "RelativeToolTip": "API\\Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-05T04:44:20.568Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\DepartmentsController.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Controllers\\DepartmentsController.cs",
               "RelativeToolTip": "API\\Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAwwHMAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAwwGcAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T08:09:10.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Department\\Index.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Department\\Index.cshtml",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Department\\Index.cshtml",
               "RelativeToolTip": "Client\\Views\\Department\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFUAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-13T04:11:52.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -256,9 +226,35 @@
               "RelativeDocumentMoniker": "API\\Program.cs",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Program.cs",
               "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAIBJwCIAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T05:59:34.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\MainLayout.cshtml",
+              "RelativeDocumentMoniker": "Client\\Views\\Layout\\MainLayout.cshtml",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\MainLayout.cshtml",
+              "RelativeToolTip": "Client\\Views\\Layout\\MainLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-13T03:57:08.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DepartmentVM.cs",
+              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\DepartmentVM.cs",
+              "RelativeDocumentMoniker": "API\\ViewModel\\DepartmentVM.cs",
+              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\DepartmentVM.cs",
+              "RelativeToolTip": "API\\ViewModel\\DepartmentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T09:26:05.548Z",
               "EditorCaption": ""
             },
             {
@@ -289,45 +285,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "MainLayout.cshtml",
-              "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\MainLayout.cshtml",
-              "RelativeDocumentMoniker": "Client\\Views\\Layout\\MainLayout.cshtml",
-              "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\MainLayout.cshtml",
-              "RelativeToolTip": "Client\\Views\\Layout\\MainLayout.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAG4AAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T03:57:08.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Register\\Index.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Register\\Index.cshtml",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Register\\Index.cshtml",
               "RelativeToolTip": "Client\\Views\\Register\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-13T04:26:37.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "SidebarLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\SidebarLayout.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Layout\\SidebarLayout.cshtml",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\SidebarLayout.cshtml",
               "RelativeToolTip": "Client\\Views\\Layout\\SidebarLayout.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAIBJwCgAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAIBZwCgAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-13T03:44:44.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Login\\Index.cshtml",
@@ -340,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Employee\\Index.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Employee\\Index.cshtml",
@@ -353,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "RegisterController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "Client\\Controllers\\RegisterController.cs",
@@ -366,7 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "register.html",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\register.html",
               "RelativeDocumentMoniker": "Client\\wwwroot\\sbAdmin\\register.html",
@@ -379,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Client\\Controllers\\LoginController.cs",
@@ -392,33 +375,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "blank.html",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\blank.html",
               "RelativeDocumentMoniker": "Client\\wwwroot\\sbAdmin\\blank.html",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\blank.html",
               "RelativeToolTip": "Client\\wwwroot\\sbAdmin\\blank.html",
-              "ViewState": "AgIAAGAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-13T03:56:38.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\index.html",
               "RelativeDocumentMoniker": "Client\\wwwroot\\sbAdmin\\index.html",
               "ToolTip": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\index.html",
               "RelativeToolTip": "Client\\wwwroot\\sbAdmin\\index.html",
-              "ViewState": "AgIAAIgCAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIUCAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-13T03:56:21.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "AuthLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\Auth\\AuthLayout.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Layout\\Auth\\AuthLayout.cshtml",
@@ -431,7 +414,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "login.html",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\sbAdmin\\login.html",
               "RelativeDocumentMoniker": "Client\\wwwroot\\sbAdmin\\login.html",
@@ -444,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "TopbarLayout.cshtml",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\Views\\Layout\\TopbarLayout.cshtml",
               "RelativeDocumentMoniker": "Client\\Views\\Layout\\TopbarLayout.cshtml",
@@ -457,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "API\\Repositories\\Interfaces\\IEmployeeRepository.cs",
@@ -470,7 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "EmployeeDataVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\EmployeeDataVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\EmployeeDataVM.cs",
@@ -483,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "EmployeeVM.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\ViewModel\\EmployeeVM.cs",
               "RelativeDocumentMoniker": "API\\ViewModel\\EmployeeVM.cs",
@@ -496,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Department.cs",
               "RelativeDocumentMoniker": "API\\Models\\Department.cs",
@@ -509,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "20240905092824_added employee table.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\20240905092824_added employee table.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\20240905092824_added employee table.cs",
@@ -522,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "Roles.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Models\\Roles.cs",
               "RelativeDocumentMoniker": "API\\Models\\Roles.cs",
@@ -535,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "MyContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Migrations\\MyContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "API\\Migrations\\MyContextModelSnapshot.cs",
@@ -548,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "Validation.cs",
               "DocumentMoniker": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\API\\Helper\\Validation.cs",
               "RelativeDocumentMoniker": "API\\Helper\\Validation.cs",

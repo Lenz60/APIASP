@@ -101,7 +101,7 @@ namespace API.Controllers
                     return Ok(new
                     {
                         statusCode = StatusCodes.Status200OK,
-                        message = "Data is successfully added",
+                        message = $"Department {addDepartment.Name} is successfully added",
                         data = lastInserted
                     });
                 }
