@@ -155,14 +155,13 @@ namespace API.Repositories
             string newEmpId = $"{year}{date}{(countData + 1).ToString("D4")}";
 
             // Ensure the newEmpId is unique
-            var check = GetEmployeeEntityById(newEmpId);
-            if (check != null)
+            //var check = GetEmployeeEntityById(newEmpId);
+            while (GetEmployeeEntityById(newEmpId) != null)
             {
                 string prefix = newEmpId.Substring(0, newEmpId.Length - 4);
                 int numericPart = int.Parse(newEmpId.Substring(newEmpId.Length - 4));
                 numericPart++;
-
-                newEmpId = $"{year}{date}{prefix}{numericPart:D4}";
+                newEmpId = $"{prefix}{numericPart:D4}";
             }
 
             return newEmpId;

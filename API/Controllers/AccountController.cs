@@ -141,6 +141,16 @@ namespace API.Controllers
                     data = null as object,
                 });
             }
+            if (!employee.Email.Contains('@'))
+            {
+                return BadRequest(new
+                {
+                    statusCode = StatusCodes.Status400BadRequest,
+                    message = "Enter valid email",
+                    data = null as object,
+                });
+
+            }
 
             try
             {
