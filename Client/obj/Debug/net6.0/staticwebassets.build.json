@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bCC4Ymv6mCU17yKpwgiXkpVSDROoalR69qGk3iPC5Xw=",
+  "Hash": "xCqhrcBz1acG38U6/tFBB6Hye2vsI6Wjl2FL+7XnbK4=",
   "Source": "Client",
   "BasePath": "_content/Client",
   "Mode": "Default",
@@ -36875,6 +36875,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sbAdmin\\vendor\\jquery-easing\\jquery.easing.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\AccountScript.js",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\",
+      "BasePath": "_content/Client",
+      "RelativePath": "Script/AccountScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Script\\AccountScript.js"
     },
     {
       "Identity": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\DepartmentScript.js",

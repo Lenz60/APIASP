@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Client.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\AccountScript.js",
+      "PackagePath": "staticwebassets\\Script\\AccountScript.js"
+    },
+    {
       "Id": "C:\\Users\\rafly.wicaksana\\source\\repos\\API\\Client\\wwwroot\\Script\\DepartmentScript.js",
       "PackagePath": "staticwebassets\\Script\\DepartmentScript.js"
     },

@@ -1,0 +1,161 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/MainLayout.cshtml";
+}
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Table of Account</h1>
+    <p class="mb-4">
+        DataTables is a third party plugin that is used to generate the demo table below.
+        For more information about DataTables, please visit the <a target="_blank"
+                                                                   href="https://datatables.net">official DataTables documentation</a>.
+    </p>
+
+    <!-- DataTales Example -->
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <button type="button" id="btnCreate" data-state="create" class="btn btn-primary" onclick="handleButtonclick(this)" data-toggle="modal" data-target="#departmentModal" data-toggle-tooltip="tooltip" data-placement="right" data-title="Create">
+                <i class="fas fa-plus"></i>
+            </button>
+
+        </div>
+        <!-- Button trigger modal -->
+
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="accountTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIK</th>
+                            <th>Email</th>
+                            <th>Username</th>
+                            <th>Full Name</th>
+                            <th>Department Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @* @foreach (var item in Data)
+                        {
+                        <tr>
+                        <td>@item.dept_Id</td>
+                        <td>@item.dept_Initial</td>
+                        <td>@item.dept_Name</td>
+                        </tr>
+                        } *@
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Input New Department</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="accountForm" class="needs-validation" novalidate >
+                        <div class="form-group">
+                            <label for="departmentInitial">First Name</label>
+                            <input type="text" class="form-control" id="accountFirstName" aria-describedby="emailHelp" required>
+                            <div class="invalid-feedback">Please input valid first name</div>
+                            @* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+                        </div>
+                        <div class="form-group">
+                            <label for="departmentInitial">Last Name</label>
+                            <input type="text" class="form-control" id="accountLastName" aria-describedby="emailHelp" required>
+                            @* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+                            <div class="invalid-feedback">Please input valid last name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="departmentInitial">Email</label>
+                            <input type="email" class="form-control" id="accountEmail" aria-describedby="emailHelp" required>
+                            <div id="invalidFeedbackEmail" class="invalid-feedback">Please input valid email</div>
+                            @* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+                        </div>
+                        <div class="form-group">
+                            <label for="departmentInitial">Password</label>
+                            <input type="password" class="form-control" id="accountPassword" aria-describedby="emailHelp" required>
+                            <div class="invalid-feedback">Please input valid password</div>
+                            @* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> *@
+                        </div>
+
+                        <div class="form-group">
+                            <label for="departmentInitial">Departments</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="inputGroupSelect01">Departments</label>
+                                </div>
+                                <select class="custom-select" id="departmentGroupSelect" required>
+                                    <option value="" selected disabled>Choose...</option>
+                                    @* <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option> *@
+                                </select>
+                            </div>
+                            <div class="invalid-feedback">Please select department</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="modalBtnSave" form="accountForm" class="btn btn-primary">Save changes</button>
+                    @* <button id="modalBtnEdit" type="button" class="btn btn-warning">Edit</button> *@
+                    <button id="modalBtnClose" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal-->
+</div>
+@section Scripts {
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch the form we want to apply custom Bootstrap validation styles to
+                var form = document.getElementById('accountForm');
+                var saveButton = document.getElementById('modalBtnSave');
+
+                // Add click event listener to the save button
+                saveButton.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    } else {
+                        // If the form is valid, you can proceed with your custom logic here
+                        registerAccount();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+    </script>
+    <script src="~/Script/AccountScript.js"></script>
+
+    @* <script src="~/sbadmin/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/sbadmin/vendor/datatables/datatables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
+        });
+    </script> *@
+}
+<!-- /.container-fluid -->

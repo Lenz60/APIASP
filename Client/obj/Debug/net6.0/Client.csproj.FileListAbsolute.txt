@@ -9,6 +9,12 @@ C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Client.pdb
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Humanizer.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\MessagePack.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\MessagePack.Annotations.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.Mvc.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.Razor.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.Helpers.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\System.Web.WebPages.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
@@ -30,6 +36,7 @@ C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.Visu
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\NuGet.Common.dll
 C:\Users\rafly.wicaksana\source\repos\API\Client\bin\Debug\net6.0\NuGet.Configuration.dll
