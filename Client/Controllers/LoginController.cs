@@ -6,6 +6,7 @@ namespace Client.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.data = "ViewBagAuth";
             return View();
         }
     }
