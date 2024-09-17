@@ -25,6 +25,12 @@
     @* <link href="css/sb-admin-2.min.css" rel="stylesheet"> *@
     <link href="~/sbadmin/css/sb-admin-2.min.css" rel="stylesheet" />
 
+    <!-- Select2 Jquery -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
 </head>
 
 <body class="bg-gradient-primary">
@@ -44,37 +50,43 @@
                             <form class="user">
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                        <input type="text" class="form-control form-control-user" id="accountFirstName"
                                                placeholder="First Name">
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                        <input type="text" class="form-control form-control-user" id="accountLastName"
                                                placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
+                                    <input type="email" class="form-control form-control-user" id="accountEmail"
                                            placeholder="Email Address">
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
                                         <input type="password" class="form-control form-control-user"
-                                               id="exampleInputPassword" placeholder="Password">
+                                               id="accountPassword" placeholder="Password">
                                     </div>
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control form-control-user"
-                                               id="exampleRepeatPassword" placeholder="Repeat Password">
+                                               id="accountRepeatPassword" placeholder="Repeat Password">
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                <div class="form-group">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">Departments</label>
+                                        </div>
+                                        <select class="custom-select " id="departmentGroupSelect">
+                                            <option selected disabled>Choose...</option>
+                                            @* <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option> *@
+                                        </select>
+                                    </div>
+                                </div>
+                                <a  class="btn btn-primary btn-user btn-block" onclick="registerAccount()">
                                     Register Account
-                                </a>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
                                 </a>
                             </form>
                             <hr>
@@ -107,7 +119,9 @@
     <!-- Custom scripts for all pages-->
     @* <script src="js/sb-admin-2.min.js"></script> *@
     <script src="~/sbadmin/js/sb-admin-2.min.js"></script>
-
+    <script src="~/script/accountscript.js"></script>
+    <!-- Select2 Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </body>
 
 </html>
